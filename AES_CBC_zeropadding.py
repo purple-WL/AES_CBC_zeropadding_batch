@@ -22,7 +22,7 @@ data = open('/Users/song.yll/Documents/字典/passwd3.txt','r')
 line = data.readlines()
 for lines in line:
     AES_Encrypt(key, lines)
-    enctext = AES_Encrypt(key, lines) + '=.=.=.='
+    enctext = AES_Encrypt(key, lines)
     #print(enctext)
     AES1 = open('/Users/song.yll/Documents/字典/fuzzDicts-master/userNameDict/AES.txt', 'a')
     AES1.write(enctext+'\n')
